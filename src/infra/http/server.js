@@ -1,9 +1,10 @@
 const express = require('express');
 const server = express();
 
-server.get('/', function(request, response){
-    response.send('<h1> ainda funcionando</h1>');
-})
+
+const routes = require('./routes');
+server.use(express.json());
+server.use(routes);
 
 
 

@@ -1,5 +1,5 @@
 {
-  "name": "PROJ_ENGII",
+  "name": "proj_ingii",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./src/infra/http/server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Schmockel/engenharia_software_II.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Daniel Pessoa Schmockel",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Schmockel/engenharia_software_II/issues"
