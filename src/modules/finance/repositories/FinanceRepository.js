@@ -36,7 +36,10 @@ class FinanceRepository {
     return moviment;
   }
 
-  // async movimentRemove(id) {}
+  async movimentRemove(id) {
+    await mongo
+    .collection('moviments').findByIdAndDelete(id);
+  }
 }
 
 module.exports = FinanceRepository;
