@@ -37,7 +37,9 @@ class FinanceRepository {
   }
 
   async movimentRemove(id) {
-    await mongo.collection('moviments').findByIdAndDelete(id);
+    await mongo
+      .collection('moviments')
+      .findOneAndDelete({ _id: mongoose.Types.ObjectId(id) });
   }
 }
 
